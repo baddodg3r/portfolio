@@ -97,26 +97,7 @@
 
 <!-- JavaScript Zone -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-      <script>
-      //Macht die NavBar Sticky
-      // Wenn der Benutzer die Seite scrollt, führe "myFunction" aus
-        window.onscroll = function() {myFunction()};
-
-      // Hol Dir den Header
-        var header = document.getElementById("myHeader");
-
-      // Holl Dir die Offset-Position der Navbar
-        var sticky = header.offsetTop;
-
-      // Füge die sticky classe hinzu, wenn die Scroll-Position erreicht wird. Entferne "sticky" wenn die Scrollposition wieder verlassen wird.
-        function myFunction() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            } else {
-                      header.classList.remove("sticky");
-                    }
-        }
-      </script>
+      <script src="https://creati-work.ch/portfolio/javascript/stickynav.js"></script>
 
 <!--JQuery für NavBar--> 
     <script>
