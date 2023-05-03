@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+    
+  <head>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <meta name="copyright" content="Copyright 2023 René Rudat">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">       
+      <link rel="stylesheet" type="text/css" href="https://dev.vitours.ch/portfolio/css/ownstyle.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/4f5ad24da0.js" crossorigin="anonymous"></script>
+      <title>ePortfolio - René Rudat</title>
+  
+  </head>
+
+  <body>
+    
+    <header class="wrapper">
+      <div class="d-flex" style="max-height: 35%;">
+        <div class="d-flex position-relative topimage-box">
+              <div class="d-flex position-absolute maxbox">
+                <div style="width: 50px;" class="lingleft"></div>
+                <div style="flex: 1;" class="centerbox"></div>
+              </div>
+        </div>
+        <div class="topright-box">
+          <div class="xtralarge expand-lg text-white">PORT</div>
+          <div class="xtralarge text-white">FOLIO</div>               
+        </div>
+      </div>
+      <!-- Navigationsleiste mit Bootstrap-->
+      <nav class="header navbar navbar-dark navbar-expand-lg fs-4 navbarOverride" id="myHeader">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link custom-nav-link " href="#">Home</a>
+                </li>
+                <li id="loadButton" class="nav-item" >
+                  <a class="nav-link custom-nav-link" onclick="loadCV()" href="#">Lebenslauf</DIV-Tester></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-nav-link disabled" href="#">Referenzen</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Downloads
+                  </a>
+                  <ul class="dropdown-menu dropdown-menuOverride">
+                    <li><a class="dropdown-item" href="https://dev.vitours.ch/portfolio/downloads/lebenslauf.pdf" download>Lebenslauf</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+      <!-- Navigationsleiste ENDE -->
+
+      <!-- start untere Hero-Section-->
+      <div class="container row CustomContainer v-card">
+        <div class="col herobox-links">
+          <img src="https://dev.vitours.ch/portfolio/images/bewerbungsfoto.png" class="passfoto">
+        </div>
+        <div class="col">
+          <div class="v-card">
+              <b>Kontaktdaten</b><br>
+              René Rudat<br>
+              Churerstrasse 25<br>
+              9470 Buchs<br>
+              <br>
+              <b>Weitere Kontaktmöglichkeiten</b>
+            <div class="dropdown-item v-card-item" onclick="window.open('https://github.com/baddodg3r','-blank')"><i class="fa-brands fa-github custom-icon"></i>Profil hier öffnen</div>
+            <div class="dropdown-item v-card-item" onclick="window.open('https://ch.linkedin.com/in/ren%C3%A9-rudat-9b8b3915b', '_blank')"> <i class="fa-brands fa-linkedin custom-icon"></i>Profil hier öffnen</div>
+            <div class="dropdown-item v-card-item" onclick="window.open('https://wa.me/41763588523', '_blank')"><i class="fa-brands fa-whatsapp custom-icon"></i>Chat öffnen</div>
+            <div class="dropdown-item v-card-item" onclick="window.open('https://www.instagram.com/der_plauderbaer/', '_blank')"><i class="fa-brands fa-instagram custom-icon"></i>Folge mir</div>
+            
+          </div>
+        </div>
+
+      </div>
+         
+    </header>    
+      <a id="myAnchor"></a>  
+      <div id="myDiv"></div>
+      
+<!-- FOOTER -->
+<footer class="text-center pt-2">
+  Copyright 2023 René Rudat&nbsp;&nbsp;&nbsp;<a class="custom-nav-link" onclick="loadImpressum()" href="#">Impressum</a>
+  </footer>      
+    
+
+<!-- JavaScript Zone -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script>
+      //Macht die NavBar Sticky
+      // Wenn der Benutzer die Seite scrollt, führe "myFunction" aus
+        window.onscroll = function() {myFunction()};
+
+      // Hol Dir den Header
+        var header = document.getElementById("myHeader");
+
+      // Holl Dir die Offset-Position der Navbar
+        var sticky = header.offsetTop;
+
+      // Füge die sticky classe hinzu, wenn die Scroll-Position erreicht wird. Entferne "sticky" wenn die Scrollposition wieder verlassen wird.
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            } else {
+                      header.classList.remove("sticky");
+                    }
+        }
+      </script>
+
+<!--JQuery für NavBar--> 
+    <script>
+// Lade den Lebenslauf
+    function loadCV() {
+      $("#myDiv").load("lebenslauf.html", function() {
+        $('html, body').animate({
+          scrollTop: $("#myAnchor").offset().top - 5
+        }, 0);
+      });
+    }
+// Lade das Impressum
+    function loadImpressum() {
+      $("#myDiv").load("impressum.html", function() {
+        $('html, body').animate({
+          scrollTop: $("#myAnchor").offset().top - 125
+        }, 0);
+      });
+    }
+    </script>
+      
+
+  </body>
+    
+</html>

@@ -1,0 +1,265 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+footer {
+    color: white;
+    background-color: rgba(0, 18, 70, 0.5);
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  }
+
+
+/* Grundfarbe ist "US Navy Blue" ( rgb(0,47,108) )*/
+a {
+    color: aqua;
+}
+a:hover {
+    color: rgb(255, 0, 0);
+}
+a:active{
+    color: blue;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    margin: 0%;
+}
+
+.wrapper {
+    max-width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.custom-icon {
+    font-size: 1.5em;
+    font-weight:bold;
+    color: rgba(0, 18, 70, 0.5);
+    margin: 5px;
+}
+
+
+
+.CustomContainer {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /*max-width: 1280px;*/
+}
+
+.v-card {
+    max-width:max-content;
+    padding: 5px;
+    
+}
+
+.v-card-item {
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+/* Hero Section Image */
+.topimage-box {
+    float: left;
+    justify-content: center;
+    position: relative;
+    width: 65%;
+    margin-left: 30px;
+    align-content: center;
+    background: url('https://dev.vitours.ch/portfolio/images/desk-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale();
+    opacity: 50%;
+}
+
+/* Overlay für die Imagebox*/
+.topright-box{
+    float: right;
+    width:35%;
+    background-color: rgba(0, 18, 70, 0.5);
+    
+}
+
+.xtralarge {
+    font-size: calc(16px + (100 - 16) * ((100vw - 320px) / (1600 - 320)));
+    align-content: center;
+    height: 50%;
+}
+
+
+.maxbox{ 
+    height: 100%;
+    width: 100%;
+}
+
+/*Bildränder links und rechts*/
+.lingleft {
+    background-image: linear-gradient(to right,  rgb(240, 240, 240), rgba(255, 255, 255, 0));
+}
+.lingright {
+    background-image: linear-gradient(to left,  rgb(255, 187, 0), rgba(255, 255, 255, 0));
+}
+
+/* Bildränder oben und unten*/
+.image-heading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+.image-taken {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    text-align: right;
+    padding: 8px;
+    font-size: 14px;
+  }
+.image-rand {
+    border-color: #ff0000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #333333;
+    
+}
+
+/* Navbar Einstellungen */
+.dropdown-menuOverride {
+    background-color: rgba(207, 207, 207, 0.95);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.dropdown-item:active {
+    background-color: rgb(59, 59, 59);
+    transition: 0.5s;
+}
+.dropdown-item:hover {
+    background-color: rgba(255, 232, 128, 0.493);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #333333;
+    
+}
+.navbarOverride {
+    background-color: rgba(150, 150, 150, 0.808);
+    /*background-image: url(/images/Tester.png);*/
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: rgb(255, 187, 0);
+    z-index: 10;
+}
+
+.custom-nav-link {
+    color:rgb(255, 255, 255);
+}
+.custom-nav-link:hover {
+    color: rgb(255, 187, 0);
+    text-shadow: 1px 1px 3px #333333;
+    
+    
+}
+.custom-nav-link:active {
+    color:#ff0000;
+}
+
+.custom-nav-link:focus {
+    color: rgb(255, 187, 0);
+}
+
+/* Style the header*/
+.header {
+    padding: 0px 0px;
+  }
+  
+  /* Page content*/
+  .content {
+    padding: 0px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position*/
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0)*/
+  .sticky + .content {
+    padding-top: 50px;
+  }
+
+  /* Hero Section unterer Bereich */
+  .herobox-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    max-width: 340px;
+    overflow:hidden;
+    border: rgb(255, 187, 0);
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .passfoto {
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto;
+}
+
+  .herobox-rechts {
+    padding-top: 15px;
+    padding-left: 15px;
+    right: 15px;
+    
+  }
+
+  /*Tabellenspalten*/
+  .Spalte1 {
+    min-width: 90px;
+  }
+  .Spalte2 {
+    min-width: 170px;
+  }
+  .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column; /* Tabellen in vertikaler Richtung anordnen */
+    align-items: center;
+  }
